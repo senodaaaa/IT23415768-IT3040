@@ -9,10 +9,10 @@ test('Pos_Fun_0004 - Translate interrogative question', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('oyaa kohedha yanne?');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('ඔයා කොහෙද යන්නෙ?');
 
   await expect(sinhalaOutput).toBeVisible();
 });

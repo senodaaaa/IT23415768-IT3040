@@ -10,10 +10,10 @@ test('Pos_Fun_0002 - Simple past tense activity', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('mama gedhara giyaa');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('මම ගෙදර ගියා.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

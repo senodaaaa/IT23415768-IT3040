@@ -10,10 +10,10 @@ test('Pos_Fun_0005 - Translate negation sentence', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('mata adha enna venne naehae');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('මට අද එන්න වෙන්නෙ නැහැ.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

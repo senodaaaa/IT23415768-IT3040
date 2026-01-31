@@ -10,10 +10,10 @@ test('Pos_Fun_0010 - Translate punctuation / numbers', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('bas eka enne 9.30AM');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('බස් එක එන්නෙ 9.30AM.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

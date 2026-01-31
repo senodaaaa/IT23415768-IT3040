@@ -10,10 +10,10 @@ test('Pos_Fun_0007 - Translate mixed Singlish + English', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('api iiye trip ekak giyaa');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('අපි ඊයෙ trip එකක් ගියා');
 
   await expect(sinhalaOutput).toBeVisible();
 });

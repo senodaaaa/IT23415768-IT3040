@@ -1,0 +1,23 @@
+{
+  "name": "it23415768-it3040",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senodaaaa/IT23415768-IT3040.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/senodaaaa/IT23415768-IT3040/issues"
+  },
+  "homepage": "https://github.com/senodaaaa/IT23415768-IT3040#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.1.0"
+  }
+}

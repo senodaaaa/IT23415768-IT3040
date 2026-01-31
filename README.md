@@ -25,16 +25,14 @@ This repository contains the full Playwright project for IT3040 Assignment 1. It
    npm install
    ```
 
-### Running the Tests
-To run all Playwright tests:
+### Running All Tests and Viewing the Report (Chromium Only)
+To run all Playwright tests in Chromium and view the full report, run this command from your project root:
+
 ```sh
-npx playwright test
+npx playwright test --project=chromium ; npx playwright show-report
 ```
 
-To open the Playwright Test Report after running tests:
-```sh
-npx playwright show-report
-```
+This will execute all tests using the Chromium browser and then open the complete HTML report.
 
 ## Repository Link
 - The public Git repository link is provided in a separate text file as required.

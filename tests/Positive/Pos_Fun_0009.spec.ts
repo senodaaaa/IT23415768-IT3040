@@ -1,6 +1,7 @@
+// Placeholder for Pos_Fun_0009.spec.ts
 import { test, expect } from '@playwright/test';
 
-test('Pos_Fun_0001 - Translate daily simple sentence', async ({ page }) => {
+test('Pos_Fun_0009 - Translate informal slang', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
 
   // Input

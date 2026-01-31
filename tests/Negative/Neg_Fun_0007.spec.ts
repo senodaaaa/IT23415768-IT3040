@@ -9,10 +9,10 @@ test('Neg_Fun_0001 - Translate imperative command', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('oyaaekakganna');
+  await singlishInput.fill('Oyaata enna puluvaandha?.');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('ඔයා එකක් ගන්න');
+  const sinhalaOutput = page.getByText('ඔයාට එන්න පුලුවන්.');
 
   await expect(sinhalaOutput).toBeVisible();
 });

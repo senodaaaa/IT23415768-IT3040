@@ -10,10 +10,10 @@ test('Pos_Fun_0011 - Translate numeric / currency', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('mulu mudhala Rs.3000');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('මුලු මුදල Rs.3000');
 
   await expect(sinhalaOutput).toBeVisible();
 });

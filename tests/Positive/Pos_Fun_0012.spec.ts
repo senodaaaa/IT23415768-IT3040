@@ -10,10 +10,10 @@ test('Pos_Fun_0012 - Translate plural form', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('eyalaa okkoma enavaa kivvaa');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('එයලා ඔක්කොම එනවා කිව්වා');
 
   await expect(sinhalaOutput).toBeVisible();
 });

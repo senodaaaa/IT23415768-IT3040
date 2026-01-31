@@ -10,10 +10,10 @@ test('Pos_Fun_0008 - Translate polite request', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('karuNaakara mage lipiya balanna');
+  await singlishInput.fill('karuNaakara magee lipiya balanna');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('කරුණාකර මගෙ ලිපිය බලන්න');
+  const sinhalaOutput = page.getByText('කරුණාකර මගේ ලිපිය බලන්න');
 
   await expect(sinhalaOutput).toBeVisible();
 });

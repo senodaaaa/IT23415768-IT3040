@@ -13,7 +13,7 @@ test('Pos_Fun_0005 - Translate negation sentence', async ({ page }) => {
   await singlishInput.fill('mata adha enna venne naehae');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මට අද එන්න වෙන්නෙ නැහැ.');
+  const sinhalaOutput = page.getByText('මට අද එන්න වෙන්නෙ නැහැ');
 
   await expect(sinhalaOutput).toBeVisible();
 });

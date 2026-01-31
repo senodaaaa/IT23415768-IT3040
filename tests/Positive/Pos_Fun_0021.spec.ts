@@ -10,10 +10,10 @@ test('Pos_Fun_0021 - Translate meeting notice', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('mata dhaen zoom meeting ekak thiyenavaa. eeka ivara velaa mQQ lunch eka gannam');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('මට දැන් zoom meeting එකක් තියෙනවා. ඒක ඉවර වෙලා මං lunch එක ගන්නම්');
 
   await expect(sinhalaOutput).toBeVisible();
 });

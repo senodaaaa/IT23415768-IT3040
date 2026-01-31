@@ -10,10 +10,10 @@ test('Pos_Fun_0022 - Translate formal news statement', async ({ page }) => {
   });
 
   // Enter Singlish
-  await singlishInput.fill('mama bath kanavaa.');
+  await singlishInput.fill('pasugiya maasa hatharak thuLa aniithikava meratata gena ena ladha vidheeshiiya dhumvaeti visi lakSha this dhedhahas atasiya hatharaka pramaaNayak adha (30) vinaasha keriNi.');
 
   // Wait until Sinhala text appear
-  const sinhalaOutput = page.getByText('මම බත් කනවා.');
+  const sinhalaOutput = page.getByText('පසුගිය මාස හතරක් තුළ අනීතිකව මෙරටට ගෙන එන ලද විදේශීය දුම්වැටි විසි ලක්ෂ තිස් දෙදහස් අටසිය හතරක ප්‍රමාණයක් අද (30) විනාශ කෙරිණි.');
 
   await expect(sinhalaOutput).toBeVisible();
 });
